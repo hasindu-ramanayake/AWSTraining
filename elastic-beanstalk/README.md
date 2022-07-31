@@ -32,3 +32,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+How to create elastic beanstalk:
+
+log in to your aws.amazon account.
+Search for elastic beanstalk,
+
+![image](https://user-images.githubusercontent.com/19543635/181919203-cede5429-3790-4606-9b13-ff03049882bd.png)
+
+
+![image](https://user-images.githubusercontent.com/19543635/181919344-b950616c-b19a-4996-9b48-bc8f5b8ab00f.png)
+
+Give a proper application name.
+Give a proper application tag, it will help to understand other users what is the content of the application.
+Choose platform versions, there are several options. 
+
+![image](https://user-images.githubusercontent.com/19543635/181919698-dff08de8-88d2-41e6-b0ea-9321383b1cce.png)
+
+
+Choose platform versions, there are several options. 
+select from application mode:
+Simple application will deploy a dummy application
+Or you can upload your own site:
+
+
+![image](https://user-images.githubusercontent.com/19543635/181919886-85848bc8-d250-42a0-a954-51b40b5c9c8c.png)
+
+with the deploment it will create may services:
+  ELB, Auto Scale group, cloud watch, security group, S3 backet, ec2 instance.
+  
+
+When you terminate the application and environment instance it will terminate above mention services as well. 
+
